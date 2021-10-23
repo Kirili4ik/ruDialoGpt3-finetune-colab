@@ -24,4 +24,12 @@ I used RuDialoGPT-3 trained on forums to fine tune. It was trained by [@Grossmen
 
 Or you can just go to google colab and play with my finetuned model!:
 
+<details>
+  <summary><b>A couple of dialogue samples:</b>
+  </summary>
+  <img src="https://raw.githubusercontent.com/Kirili4ik/ruDialoGpt3-finetune-colab/main/sample1.jpg">
+  <img src="https://raw.githubusercontent.com/Kirili4ik/ruDialoGpt3-finetune-colab/main/sample2.jpg">
+</details>
+
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fnAVURjyZRK9VQg1Co_-SKUQnRES8l9R?usp=sharing#scrollTo=psXZnJk0Eo3J) Inference part
