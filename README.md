@@ -8,7 +8,7 @@ This is a ready-for-use-colab tutorial for finetuning ruDialoGpt3 model on your 
 
 I used RuDialoGPT-3 trained on forums to fine tune. It was trained by [@Grossmend](https://github.com/Grossmend) on Russian forums. The training procedure of the model for dialogue is described in Grossmend's [blogpost](https://habr.com/ru/company/icl_services/blog/548244/) (in Russian). **I have created a simple pipeline and fine tuned that model on my own exported telegram chat (~30mb json, 3 hours of fine tuning**). It is in fact very easy to get the data from telegram and fine tune a model:
 
-1) Export your telegram chat
+1) Export your telegram chat as JSON
 
 ![](https://raw.githubusercontent.com/Kirili4ik/ruDialoGpt3-finetune-colab/main/how-to-export-chat.jpg)
 
