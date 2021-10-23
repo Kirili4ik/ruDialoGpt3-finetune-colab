@@ -1,9 +1,27 @@
 # ruDialoGpt3 colab for finetuning on telegram chat
-This is a colab-ready-for-use tutorial for finetuning ruDialoGpt3 model on your telegram chat using HuggingFace and Pytorch
+This is a colab-ready-for-use tutorial for finetuning ruDialoGpt3 model on your telegram chat using HuggingFace and PyTorch.
+
+- 🤗 [Model page](https://huggingface.co/Kirili4ik/ruDialoGpt3-medium-finetuned-telegram) 
+
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fnAVURjyZRK9VQg1Co_-SKUQnRES8l9R?usp=sharing) Colab tutorial 
 
 
-Here is a ready-to-run code for fine-tuning a RuDialoGPT3 model using HuggingFace and PyTorch on your telegram chat.
+I used RuDialoGPT-3 trained on forums to fine tune. It was trained by [@Grossmend](https://github.com/Grossmend) on Russian forums. The training procedure of the model for dialogue is described in Grossmend's [blogpost](https://habr.com/ru/company/icl_services/blog/548244/) (in Russian). I have created a simple pipeline and fine tuned that model on my own exported telegram chat (**~30mb json, 3 hours of fine tuning**). It is in fact very easy to get the data from telegram and fine tune a model:
 
-I used RuDialoGPT-3 trained on forums to fine tune. It was trained by @Grossmend on Russian forums. The training process took 12 days using 4x RTX 2080 Ti (2 epochs on 32GB text corpus). The training procedure of GPT-3 for dialogue is described in Grossmend's blogpost (in Russian).
+1) Export your telegram chat
 
-If you want just to try / to talk to my fine-tuned model than go straight to the Inference section.
+![](https://raw.githubusercontent.com/Kirili4ik/ruDialoGpt3-finetune-colab/main/how-to-export-chat.jpg)
+
+2) Upload it to colab
+
+![](https://raw.githubusercontent.com/Kirili4ik/ruDialoGpt3-finetune-colab/main/how-to-upload-json.jpg)
+
+3) The code will create a dataset for you
+
+4) Wait a bit! 
+ 
+5) :tada: (Inference and smile)
+
+Or you can just go to google colab and play with my finetuned model!:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fnAVURjyZRK9VQg1Co_-SKUQnRES8l9R?usp=sharing#scrollTo=psXZnJk0Eo3J) Inference part
