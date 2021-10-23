@@ -1,4 +1,4 @@
-# ruDialoGpt3-finetune-colab
+# ruDialoGpt3 colab for finetuning on telegram chat
 This is a colab-ready-for-use tutorial for finetuning ruDialoGpt3 model on your telegram chat using HuggingFace and Pytorch
 
 
