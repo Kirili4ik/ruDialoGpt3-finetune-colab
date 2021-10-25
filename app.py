@@ -1,7 +1,7 @@
 import torch
 import gradio as gr
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
+from util_funcs import get_length_param
 
 def chat_function(message, length_of_the_answer, who_is_next, creativity):   # model, tokenizer
     
