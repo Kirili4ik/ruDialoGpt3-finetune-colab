@@ -239,4 +239,5 @@ iface = gr.Interface(chat_function,
                      allow_flagging=False
                     )
 
-iface.launch()
+if __name__ == "__main__":
+    iface.launch()
