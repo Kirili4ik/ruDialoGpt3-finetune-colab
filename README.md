@@ -33,7 +33,7 @@ It is in fact very easy to get the data from telegram and fine tune a model:
 5) :tada: (Inference and smile)
 </details>
  
-To run using 🤗Spaces or [Gradio](https://github.com/gradio-app/gradio) check [app.py](app.py)  
+> To run using 🤗Spaces or [Gradio](https://github.com/gradio-app/gradio) check [app.py](app.py)  
  
 
 <details>
