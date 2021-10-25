@@ -198,44 +198,41 @@ def chat_function(message, length_of_the_answer, who_is_next, creativity):   # m
             html += f"<div class='resp_msg'>{resp_msg}</div>"
     html += "</div>"
     return html
-  
+
 
 
 # Download checkpoint:
-checkpoint = "Kirili4ik/ruDialoGpt3-medium-finetuned-telegram"   
+checkpoint = "Kirili4ik/ruDialoGpt3-medium-finetuned-telegram"
 tokenizer =  AutoTokenizer.from_pretrained(checkpoint)
 model = AutoModelForCausalLM.from_pretrained(checkpoint)
 model = model.eval()
 
 
 checkbox_group = gr.inputs.CheckboxGroup(['Kirill', 'Me'], default=['Kirill'], type="value", label=None)
-
-inputs = gr.inputs.Textbox(lines=1, label="???")
-outputs =  gr.outputs.Textbox(label="Kirill (GPT-2):")
 title = "Chat with Kirill (in Russian)"
 description = "Тут можно поболтать со мной. Но вместо меня бот. Оставь message пустым, чтобы Кирилл продолжил говорить. Подбробнее о технике по ссылке внизу."
 article = "<p style='text-align: center'><a href='https://github.com/Kirili4ik/ruDialoGpt3-finetune-colab'>Github with fine-tuning GPT-2 on your chat</a></p>"
 examples = [
-            ["Привет, как дела?", 'medium', 'Kirill', 0.6],
+            ["Привет, как дела?", 'medium', 'Kirill', 0.5],
             ["Сколько тебе лет?", 'medium', 'Kirill', 0.3],
 ]
 
-iface = gr.Interface(chat_function, 
-                     [    
-                         "text", 
-                         gr.inputs.Radio(["short", "medium", "long"], default='medium'), 
+iface = gr.Interface(chat_function,
+                     [
+                         "text",
+                         gr.inputs.Radio(["short", "medium", "long"], default='medium'),
                          gr.inputs.Radio(["Kirill", "Me"], default='Kirill'),
-                         gr.inputs.Slider(0, 1, default=0.6)
-                     ], 
-                     "html", 
+                         gr.inputs.Slider(0, 1, default=0.5)
+                     ],
+                     "html",
                      title=title, description=description, article=article, examples=examples,
                      css= """
                             .chatbox {display:flex;flex-direction:column}
                             .user_msg, .resp_msg {padding:4px;margin-bottom:4px;border-radius:4px;width:80%}
                             .user_msg {background-color:cornflowerblue;color:white;align-self:start}
                             .resp_msg {background-color:lightgray;align-self:self-end}
-                          """, 
-                     allow_screenshot=True, 
+                          """,
+                     allow_screenshot=True,
                      allow_flagging=False
                     )
 
