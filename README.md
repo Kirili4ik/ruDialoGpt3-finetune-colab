@@ -1,4 +1,17 @@
 # ruDialoGpt3 colab for finetuning on telegram chat
+<div class="flex flex-wrap space-x-1">
+<a href="https://huggingface.co/Kirili4ik/ruDialoGpt3-medium-finetuned-telegram">
+<img alt="Model" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ruDialoGPT3-blueviolet">
+</a>
+<a href="https://huggingface.co/spaces/Kirili4ik/chat-with-Kirill">
+<img alt="Spaces" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue">
+</a>
+ <a href="https://colab.research.google.com/drive/1fnAVURjyZRK9VQg1Co_-SKUQnRES8l9R?usp=sharing">
+<img alt="???" src="https://colab.research.google.com/assets/colab-badge.svg">
+</a>
+</div>
+
+
 This is a ready-for-use-colab tutorial for finetuning ruDialoGpt3 model on your telegram chat using HuggingFace and PyTorch
 
 Here is a picture of a demo you can also setup with Gradio and Huggingface Spaces:
